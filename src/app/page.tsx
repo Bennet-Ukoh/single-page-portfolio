@@ -1,19 +1,11 @@
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Intro from "@/components/intro";
-import Projects from "@/components/projects";
-import Skills from "@/components/skills";
 
 export default function Page() {
   return (
-    <main className="flex  flex-col relative bg-[#151515] max-w-[1100px] mx-auto h-screen text-[#FFFFFF]">
+    <main className="relative w-full max-w-[1440px] mx-auto min-h-screen bg-bg-primary lg:px-[165px] md:px-[30px] px-4 justify-center items-center">
       <Header />
       <Intro />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
     </main>
   );
 }
