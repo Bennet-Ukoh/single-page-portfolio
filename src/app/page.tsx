@@ -1,3 +1,4 @@
+import Contact from "@/components/contact";
 import Header from "@/components/header";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
@@ -10,6 +11,7 @@ export default function Page() {
       <Intro />
       <Tools />
       <Projects />
+      <Contact />
     </main>
   );
 }
