@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Intro() {
   return (
-    <section className="flex flex-col items-center md:flex-row lg:items-start z-20 ">
+    <section className="flex flex-col items-center md:flex-row lg:items-start z-20 mb-4 ">
       <div className=" lg:w-1/2 md:w-1/2 w-full mb-2 flex flex-col justify-center items-center md:items-start">
         <Image
           src={introImg}
@@ -37,12 +37,12 @@ export default function Intro() {
         <Image
           src={profileImg}
           alt="profile image"
-          className="lg:w-[445px] lg:h-[720px] md:w-[322px] md:h-[600px] md:left-[445px] opacity-50 absolute md:top-0 lg:left-[58%] left-[26%] top-[10%] w-[180px] h-[378px] z-0"
+          className="lg:w-[445px] lg:h-[720px] md:w-[322px] md:h-[600px] md:left-[445px] opacity-50 absolute md:top-0 lg:left-[54.8%] left-[26%] top-[4%] w-[180px] h-[378px] z-0"
         />
         <Image
           src={oval}
           alt="oval on profile image"
-          className="absolute lg:top-[521px] lg:left-[766px] w-[129px] h-[129px] md:left-[702px] md:top-[471px] left-[311px] top-[245px]  z-0"
+          className="absolute lg:top-[521px] lg:left-[680px] w-[129px] h-[129px] md:left-[702px] md:top-[471px] left-[311px] top-[245px]  z-0"
         />
       </div>
     </section>
