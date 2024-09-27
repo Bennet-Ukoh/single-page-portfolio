@@ -7,7 +7,7 @@ export default function Footer() {
         <a href="#intro" className="text-heading-m">
           bennetukoh
         </a>
-        <ul className="flex md:gap-x-8 gap-x-6 lg:mr-6 z-50">
+        <ul className="flex md:gap-x-8 gap-x-6 z-50">
           {navSocials.map((social, index) => (
             <li key={index}>
               <a
