@@ -37,13 +37,13 @@ export default function Intro() {
         <Image
           src={profileImg}
           alt="profile image"
-          className="lg:w-[445px] lg:h-[720px] md:w-[322px] md:h-[600px] md:left-[445px] opacity-50 absolute md:top-0 lg:left-[54.8%] left-[150px] top-[70px] w-[180px] h-[378px] z-0"
+          className="lg:w-[445px] lg:h-[720px] md:w-[322px] md:h-[600px] md:left-[445px] opacity-50 absolute md:top-0 lg:left-[54.8%] left-[138px] top-[70px] w-[180px] h-[378px] z-0"
         />
-        <Image
+        {/* <Image
           src={oval}
           alt="oval on profile image"
           className="absolute lg:top-[521px] lg:left-[680px] w-[129px] h-[129px] md:left-[702px] md:top-[471px] left-[320px] top-[245px]  z-0"
-        />
+        /> */}
       </div>
     </section>
   );
