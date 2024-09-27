@@ -60,6 +60,24 @@ export default function Projects() {
                   <li key={index}>{tool}</li>
                 ))}
               </ul>
+              <div className="flex gap-x-4 lg:hidden ">
+                <a
+                  className="md:text-lg text-base border-b-2 text-text-body border-text-link hover:text-text-link"
+                  href={project.gitUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Code
+                </a>
+                <a
+                  className="md:text-lg text-base border-b-2 text-text-body border-text-link hover:text-text-link"
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Live
+                </a>
+              </div>
             </div>
           </div>
         ))}
