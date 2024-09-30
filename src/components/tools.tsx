@@ -2,7 +2,7 @@ import { courses } from "@/lib/data";
 
 export default function Tools() {
   return (
-    <section className="border-t border-x-text-body lg:mt-56 mt-12">
+    <section className="border-t border-x-text-body lg:mt-56 mt-12 md:mt-12">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center mt-10">
         {courses.map((course) => (
           <div
