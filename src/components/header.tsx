@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="h-32 text-text-heading pt-[29px] md:mb-14 w-full mb:14 ">
       <nav className="flex md:justify-between justify-center items-center md:flex-row flex-col gap-y-5">
-        <a href="#intro" className="text-heading-m">
+        <a href="#intro" className=" text-heading-m">
           bennetukoh
         </a>
         <ul className="flex md:gap-x-8 gap-x-6 lg:pr-4 z-50">

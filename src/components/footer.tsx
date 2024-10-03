@@ -2,8 +2,8 @@ import { navSocials } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="h-32 text-text-heading p-4 bg-[#242424] border-t border-x-text-body">
-      <nav className="flex md:justify-between justify-center items-center md:flex-row flex-col gap-y-5">
+    <footer className="h-32 max-w-[1440px] mx-auto lg:px-[165px] md:px-[30px] px-4 justify-center items-center text-text-heading  bg-[#242424]  w-full">
+      <nav className="flex md:justify-between justify-center items-center md:flex-row flex-col gap-y-5 border-t border-x-text-body p-4">
         <a href="#intro" className="text-heading-m">
           bennetukoh
         </a>

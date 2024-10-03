@@ -1,8 +1,8 @@
 import Image from "next/image";
 import introImg from "@/public/group 26.png";
-import profileImg from "@/public/profileimage.jpg";
-import oval from "@/public/oval.png";
+import profileImg from "@/public/profileimage-removebg.png";
 import Link from "next/link";
+import oval from "@/public/oval.png";
 
 export default function Intro() {
   return (
@@ -11,15 +11,15 @@ export default function Intro() {
         <Image
           src={introImg}
           alt="intro bg image"
-          className="h-[129px] w-[530px] absolute lg:top-[133px] top-[124px] -left-[342px] lg:-left-[100px] md:-left-[265px] md:top-[86px]"
+          className="h-[129px] w-[530px] absolute lg:top-[133px] top-[124px] -left-[230px] lg:-left-[100px] md:-left-[265px] md:top-[86px] z-30"
         />
 
-        <div className="lg:mt-4 md:mt-36 lg:max-w-[706px] md:max-w-[443px] lg:mb-[66px] md:mb-[34px] mt-[340px] max-w-[343px] mb-4">
-          <h1 className="text-text-heading lg:text-6xl text-4xl md:text-start text-center ">
+        <div className="lg:mt-6 md:mt-0 lg:max-w-[706px] md:max-w-[443px] lg:mb-[66px] md:mb-[34px] mt-[340px] max-w-[343px] mb-4">
+          <h1 className="text-text-heading lg:text-6xl md:text-6xl  text-4xl md:text-start text-center ">
             Nice to meet you! I&apos;m{" "}
             <span className="border-b-4 border-text-link">Bennet</span>.
           </h1>
-          <p className="md:max-w-[445px] text-text-body md:text-body-l mt-[43px] md:text-start text-center">
+          <p className="md:max-w-[445px] text-text-body md:text-body-l mt-[43px] md:mt-[80px] md:text-start text-center">
             Based in Nigeria, I&apos;m a front-end developer passionate about
             building accessible web apps that users love.
           </p>
@@ -27,7 +27,7 @@ export default function Intro() {
 
         <Link
           href="#contact"
-          className="md:text-heading-m text-body-l border-b-2 text-text-body border-text-link hover:text-text-link "
+          className="md:mt-4 lg:mt-0 md:text-heading-m text-body-l border-b-2 text-text-body border-text-link hover:text-text-link "
         >
           CONTACT ME
         </Link>
@@ -37,13 +37,13 @@ export default function Intro() {
         <Image
           src={profileImg}
           alt="profile image"
-          className="lg:w-[445px] lg:h-[720px] md:w-[322px] md:h-[600px] md:left-[445px] opacity-50 absolute md:top-0 lg:left-[54.8%] left-[101px] top-[70px] w-[180px] h-[378px] z-0"
+          className="lg:w-[445px] lg:h-[720px] md:w-[322px] md:h-[600px] md:left-[445px] bg-[#242424] absolute md:top-0 lg:left-[54.8%] left-[101px] top-[70px] w-[180px] h-[378px] z-0"
         />
-        {/* <Image
+        <Image
           src={oval}
           alt="oval on profile image"
-          className="lg:absolute lg:top-[521px] lg:left-[680px] lg:w-[129px] lg:h-[129px]  z-0"
-        /> */}
+          className="absolute lg:top-[440px] lg:left-[680px] w-[129px] h-[129px] md:top-[380px] md:right-[-60px] top-[250px] right-[-70px] overflow-x-hidden z-50"
+        />
       </div>
     </section>
   );

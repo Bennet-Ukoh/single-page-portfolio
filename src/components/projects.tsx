@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <section className="mt-14">
+    <section className="mt-14 border-t md:border-t-0 border-text-heading pt-14 md:pt-0">
       <div className="flex justify-between items-center">
         <h1 className="lg:text-heading-l md:text-3xl text-2xl text-text-heading font-bold">
           Projects
@@ -17,7 +17,7 @@ export default function Projects() {
         </Link>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-8 justify-center items-center mt-10">
+      <div className="grid md:grid-cols-2 gap-8 justify-center items-center mt-10">
         {projects.map((project, index) => (
           <div key={index} className="relative group">
             {/* Image */}
