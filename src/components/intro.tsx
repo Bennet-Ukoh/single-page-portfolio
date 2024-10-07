@@ -42,7 +42,7 @@ export default function Intro() {
         <Image
           src={oval}
           alt="oval on profile image"
-          className="absolute lg:top-[440px] lg:left-[765px] w-[129px] h-[129px] md:top-[380px] md:right-[-60px] top-[250px] right-[-70px] z-50"
+          className="absolute lg:top-[440px] lg:left-[680px] w-[129px] h-[129px] md:top-[380px] md:right-[-60px] top-[250px] right-[-70px] z-50"
         />
       </div>
     </section>
