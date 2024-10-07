@@ -4,6 +4,7 @@ import introImg from "@/public/group 26.png";
 import { FieldValues, useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FiAlertCircle } from "react-icons/fi";
 
 export default function Contact() {
   const {
@@ -69,25 +70,33 @@ export default function Contact() {
         )}
 
         {/* Email Input */}
-        <input
-          className={`h-12 my-3 border-b bg-transparent text-text-body caret-text-body p-4 transition-all focus:outline-none ${
-            errors.email
-              ? "border-b-red-500"
-              : "focus:border-b-2 focus:border-text-link"
-          }`}
-          type="email"
-          {...register("email", {
-            required: "Email is required",
-            pattern: {
-              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-              message: "Invalid email format!",
-            },
-          })}
-          placeholder="EMAIL"
-        />
-        {errors.email && (
-          <p className="text-red-500 text-sm">{`${errors.email.message}`}</p>
-        )}
+        <div className="relative">
+          <input
+            className={`h-12 my-3 w-full border-b bg-transparent text-text-body caret-text-body p-4 transition-all focus:outline-none ${
+              errors.email
+                ? "border-b-red-500"
+                : "focus:border-b-2 focus:border-text-link"
+            }`}
+            type="email"
+            {...register("email", {
+              required: "Email is required",
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                message: "Sorry! Invalid format here",
+              },
+            })}
+            placeholder="EMAIL"
+          />
+          {errors.email && (
+            <>
+              <FiAlertCircle
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 text-red-500"
+                size={20}
+              />
+              <p className="text-red-500 text-sm">{`${errors.email.message}`}</p>
+            </>
+          )}
+        </div>
 
         {/* Message Input */}
         <textarea
