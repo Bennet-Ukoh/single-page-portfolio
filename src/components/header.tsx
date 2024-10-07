@@ -2,12 +2,15 @@ import { navSocials } from "@/lib/data";
 
 export default function Header() {
   return (
-    <header className="h-32 text-text-heading pt-[29px] md:mb-14 w-full mb:14 ">
+    <header
+      className="h-32 text-text-heading pt-[29px] md:mb-14 w-full mb:14 "
+      id="header"
+    >
       <nav className="flex md:justify-between justify-center items-center md:flex-row flex-col gap-y-5">
         <a href="#intro" className=" text-heading-m">
           bennetukoh
         </a>
-        <ul className="flex md:gap-x-8 gap-x-6 lg:pr-4 z-50">
+        <ul className="flex md:gap-x-8  gap-x-6 lg:pr-12 z-50">
           {navSocials.map((social, index) => (
             <li key={index}>
               <a
